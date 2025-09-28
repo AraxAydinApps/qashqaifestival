@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فستیوال فرهنگی قشقایی استانبول 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #ff6b6b 0%, #feca57 50%, #48dbfb 100%);
+        }
+        
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 107, 107, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(72, 219, 251, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(254, 202, 87, 0.1) 0%, transparent 70%);
+        }
+        
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-reverse space-x-4">
+                    <div class="text-2xl font-bold text-gray-900">🏛️</div>
+                    <span class="text-xl font-bold text-gray-900">فستیوال قشقایی</span>
+                </div>
+                <div class="hidden md:flex space-x-reverse space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-yellow-600 font-medium">خانه</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-yellow-600 font-medium">درباره</a>
+                    <a href="#programs" class="nav-link text-gray-700 hover:text-yellow-600 font-medium">برنامه‌ها</a>
+                    <a href="#location" class="nav-link text-gray-700 hover:text-yellow-600 font-medium">مکان</a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-yellow-600 font-medium">گالری</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-yellow-600 font-medium">تماس</a>
+                </div>
+                <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-yellow-600">خانه</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-yellow-600">درباره</a>
+                <a href="#programs" class="block px-3 py-2 text-gray-700 hover:text-yellow-600">برنامه‌ها</a>
+                <a href="#location" class="block px-3 py-2 text-gray-700 hover:text-yellow-600">مکان</a>
+                <a href="#gallery" class="block px-3 py-2 text-gray-700 hover:text-yellow-600">گالری</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-yellow-600">تماس</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg hero-pattern min-h-screen flex items-center justify-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
+            <div class="mb-8">
+                <div class="text-6xl mb-4"></div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    فستیوال فرهنگی
+                    <span class="gold-gradient bg-clip-text text-transparent">قشقایی</span>
+                </h1>
+                <p class="text-2xl md:text-3xl mb-8 font-light">
+                    فرهنگ قشقایی در قلب استانبول
+                </p>
+                <p class="text-lg md:text-xl mb-12 text-gray-300 max-w-2xl mx-auto">
+                    تجربه‌ای بی‌نظیر از موسیقی، هنر، غذا و فرهنگ اصیل قشقایی در شهر زیبای استانبول
+                </p>
+            </div>
+            
+            <!-- Countdown -->
+            <div class="mb-12">
+                <h3 class="text-xl mb-6 text-yellow-400">شمارش معکوس تا برگزاری</h3>
+                <div class="flex justify-center space-x-reverse space-x-4" id="countdown">
+                    <div class="countdown-box rounded-lg p-4 text-center min-w-[80px]">
+                        <div class="text-3xl font-bold" id="days">365</div>
+                        <div class="text-sm text-gray-300">روز</div>
+                    </div>
+                    <div class="countdown-box rounded-lg p-4 text-center min-w-[80px]">
+                        <div class="text-3xl font-bold" id="hours">00</div>
+                        <div class="text-sm text-gray-300">ساعت</div>
+                    </div>
+                    <div class="countdown-box rounded-lg p-4 text-center min-w-[80px]">
+                        <div class="text-3xl font-bold" id="minutes">00</div>
+                        <div class="text-sm text-gray-300">دقیقه</div>
+                    </div>
+                    <div class="countdown-box rounded-lg p-4 text-center min-w-[80px]">
+                        <div class="text-3xl font-bold" id="seconds">00</div>
+                        <div class="text-sm text-gray-300">ثانیه</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-4 sm:space-y-0 sm:space-x-reverse sm:space-x-4 sm:flex sm:justify-center">
+                <button onclick="scrollToSection('programs')" class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto shadow-lg">
+                    مشاهده برنامه‌ها
+                </button>
+                <button onclick="scrollToSection('contact')" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 hover:border-transparent transition-all duration-300 w-full sm:w-auto">
+                    ثبت‌نام و خرید بلیت
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-purple-100 via-pink-100 to-cyan-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">درباره فستیوال</h2>
+                <div class="w-24 h-1 gold-gradient mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    فستیوال فرهنگی قشقایی استانبول 2026، پلی است میان فرهنگ کهن قشقایی  و جهان مدرن
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="section-fade">
+                    <div class="text-8xl mb-6 text-center">🏔️</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">ماموریت ما</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        معرفی غنای فرهنگ قشقایی به جهان از طریق موسیقی اصیل، لباس‌های سنتی رنگارنگ، 
+                        صنایع دستی بی‌نظیر و غذاهای محلی خوشمزه. این فستیوال فرصتی است برای تجربه 
+                        زندگی عشایری و آشنایی با سنت‌های کهن این قوم اصیل ایرانی.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <span class="text-yellow-600 ml-3">🎵</span>
+                            معرفی موسیقی و آواهای محلی قشقایی
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-600 ml-3">👘</span>
+                            نمایش لباس‌های سنتی و رنگارنگ
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-600 ml-3">🎨</span>
+                            آموزش صنایع دستی و هنرهای سنتی
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 ml-3">🍽️</span>
+                            تجربه طعم‌های اصیل غذاهای قشقایی
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="section-fade">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900 text-center">اهداف فستیوال</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="gold-gradient rounded-full p-2 ml-4 mt-1">
+                                    <span class="text-black font-bold text-sm">1</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">حفظ میراث فرهنگی</h4>
+                                    <p class="text-gray-600 text-sm">انتقال فرهنگ اصیل قشقایی به نسل‌های آینده</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="gold-gradient rounded-full p-2 ml-4 mt-1">
+                                    <span class="text-black font-bold text-sm">2</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">تبادل فرهنگی</h4>
+                                    <p class="text-gray-600 text-sm">ایجاد پل ارتباطی میان فرهنگ‌های مختلف</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="gold-gradient rounded-full p-2 ml-4 mt-1">
+                                    <span class="text-black font-bold text-sm">3</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">معرفی جهانی</h4>
+                                    <p class="text-gray-600 text-sm">نمایش زیبایی‌های فرهنگ قشقایی در سطح بین‌المللی</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gradient-to-br from-emerald-100 via-teal-100 to-blue-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">برنامه‌های فستیوال</h2>
+                <div class="w-24 h-1 gold-gradient mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    تجربه‌ای کامل از فرهنگ قشقایی در قالب برنامه‌های متنوع و جذاب
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Music Program -->
+                <div class="card-hover bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 rounded-2xl p-8 border border-purple-300 shadow-lg section-fade">
+                    <div class="text-5xl mb-4 text-center">🎵</div>
+                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent text-center">موسیقی زنده</h3>
+                    <p class="text-gray-700 mb-6 text-center">
+                        اجرای موسیقی اصیل قشقایی توسط نوازندگان و خوانندگان مطرح
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• اجرای آهنگ‌های محلی و سنتی</li>
+                        <li>• نمایش سازهای بومی</li>
+                        <li>• کنسرت گروه‌های موسیقی</li>
+                        <li>• آموزش موسیقی برای علاقه‌مندان</li>
+                    </ul>
+                </div>
+                
+                <!-- Fashion Show -->
+                <div class="card-hover bg-gradient-to-br from-cyan-100 via-blue-100 to-purple-100 rounded-2xl p-8 border border-cyan-300 shadow-lg section-fade">
+                    <div class="text-5xl mb-4 text-center">👘</div>
+                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent text-center">نمایش لباس سنتی</h3>
+                    <p class="text-gray-700 mb-6 text-center">
+                        نمایش زیباترین لباس‌های سنتی قشقایی با طراحی‌های اصیل
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• لباس‌های زنانه و مردانه سنتی</li>
+                        <li>• نمایش تکنیک‌های بافندگی</li>
+                        <li>• داستان پشت هر لباس</li>
+                        <li>• فروش لباس‌های دست‌ساز</li>
+                    </ul>
+                </div>
+                
+                <!-- Handicrafts -->
+                <div class="card-hover bg-gradient-to-br from-emerald-100 via-teal-100 to-cyan-100 rounded-2xl p-8 border border-emerald-300 shadow-lg section-fade">
+                    <div class="text-5xl mb-4 text-center">🎨</div>
+                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent text-center">کارگاه صنایع دستی</h3>
+                    <p class="text-gray-700 mb-6 text-center">
+                        آموزش و نمایش هنرهای سنتی قشقایی توسط استادکاران
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• بافت گلیم و فرش دستباف</li>
+                        <li>• ساخت زیورآلات سنتی</li>
+                        <li>• هنر چرم‌دوزی</li>
+                        <li>• کارگاه‌های عملی برای بازدیدکنندگان</li>
+                    </ul>
+                </div>
+                
+                <!-- Children's Section -->
+                <div class="card-hover bg-gradient-to-br from-yellow-100 via-orange-100 to-red-100 rounded-2xl p-8 border border-yellow-300 shadow-lg section-fade">
+                    <div class="text-5xl mb-4 text-center">🧒</div>
+                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent text-center">بخش کودکان</h3>
+                    <p class="text-gray-700 mb-6 text-center">
+                        برنامه‌های ویژه و آموزشی برای کودکان و نوجوانان
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• قصه‌گویی با لباس محلی</li>
+                        <li>• بازی‌های سنتی قشقایی</li>
+                        <li>• آموزش رقص‌های محلی</li>
+                        <li>• کارگاه نقاشی و صنایع دستی</li>
+                    </ul>
+                </div>
+                
+                <!-- Food Section -->
+                <div class="card-hover bg-gradient-to-br from-rose-100 via-pink-100 to-purple-100 rounded-2xl p-8 border border-rose-300 shadow-lg section-fade">
+                    <div class="text-5xl mb-4 text-center">🍽️</div>
+                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent text-center">غذاهای محلی</h3>
+                    <p class="text-gray-700 mb-6 text-center">
+                        تجربه طعم‌های اصیل و خوشمزه غذاهای قشقایی
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• غذاهای سنتی عشایری</li>
+                        <li>• نان‌های محلی تازه پخت</li>
+                        <li>• شیرینی‌ها و دسرهای سنتی</li>
+                        <li>• آموزش پخت برای علاقه‌مندان</li>
+                    </ul>
+                </div>
+                
+                <!-- Cultural Exhibitions -->
+                <div class="card-hover bg-gradient-to-br from-violet-100 via-purple-100 to-fuchsia-100 rounded-2xl p-8 border border-violet-300 shadow-lg section-fade">
+                    <div class="text-5xl mb-4 text-center">🏛️</div>
+                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent text-center">نمایشگاه فرهنگی</h3>
+                    <p class="text-gray-700 mb-6 text-center">
+                        نمایش تاریخ، فرهنگ و سبک زندگی قشقایی
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• عکس‌های تاریخی و مستندات</li>
+                        <li>• ابزار و وسایل زندگی عشایری</li>
+                        <li>• نقشه‌های مسیرهای کوچ</li>
+                        <li>• فیلم‌های مستند فرهنگی</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20 bg-gradient-to-br from-rose-100 via-orange-100 to-yellow-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">مکان و تاریخ برگزاری</h2>
+                <div class="w-24 h-1 gold-gradient mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="section-fade">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <div class="text-6xl mb-6 text-center">🏛️</div>
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900 text-center">استانبول، ترکیه</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <span class="text-yellow-600 text-xl ml-3">📍</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">مرکز کنوانسیون استانبول</h4>
+                                    <p class="text-gray-600 text-sm">سالن‌های A، B و C</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-600 text-xl ml-3">🗓️</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">سال 2026</h4>
+                                    <p class="text-gray-600 text-sm">تاریخ دقیق به زودی اعلام می‌شود</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-600 text-xl ml-3">⏰</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">مدت برگزاری</h4>
+                                    <p class="text-gray-600 text-sm">سه روز متوالی</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-600 text-xl ml-3">🎫</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">ظرفیت</h4>
+                                    <p class="text-gray-600 text-sm">500 نفر در روز</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-fade">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900">چرا استانبول؟</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        استانبول به عنوان پل میان شرق و غرب، مکانی ایده‌آل برای معرفی فرهنگ قشقایی به جهان است. 
+                        این شهر تاریخی با جمعیت چندفرهنگی و موقعیت استراتژیک، بهترین فرصت را برای 
+                        نمایش غنای فرهنگی ایران فراهم می‌کند.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 shadow-md">
+                            <h4 class="font-semibold text-gray-900 mb-2">دسترسی آسان</h4>
+                            <p class="text-gray-600 text-sm">فرودگاه بین‌المللی و حمل‌ونقل عمومی مناسب</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow-md">
+                            <h4 class="font-semibold text-gray-900 mb-2">جمعیت متنوع</h4>
+                            <p class="text-gray-600 text-sm">حضور گردشگران و ساکنان از سراسر جهان</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow-md">
+                            <h4 class="font-semibold text-gray-900 mb-2">امکانات مدرن</h4>
+                            <p class="text-gray-600 text-sm">سالن‌های مجهز و امکانات کنفرانس پیشرفته</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="py-20 bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">حامیان و اسپانسرها</h2>
+                <div class="w-24 h-1 gold-gradient mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600">با تشکر از حمایت ارزشمند سازمان‌ها و شرکت‌های زیر</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 section-fade">
+                <div class="bg-gray-50 rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition-all duration-300">
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">🏛️</div>
+                        <p class="text-sm font-medium text-gray-600">وزارت فرهنگ</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition-all duration-300">
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">🎭</div>
+                        <p class="text-sm font-medium text-gray-600">انجمن فرهنگی</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition-all duration-300">
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">✈️</div>
+                        <p class="text-sm font-medium text-gray-600">خطوط هوایی</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 flex items-center justify-center hover:shadow-lg transition-all duration-300">
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">🏨</div>
+                        <p class="text-sm font-medium text-gray-600">هتل‌های استانبول</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 section-fade">
+                <p class="text-gray-600 mb-6">آیا می‌خواهید حامی این رویداد فرهنگی باشید؟</p>
+                <button onclick="scrollToSection('contact')" class="gold-gradient text-black px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all duration-300">
+                    درخواست حمایت
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gradient-to-br from-cyan-100 via-blue-100 to-indigo-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">گالری تصاویر</h2>
+                <div class="w-24 h-1 gold-gradient mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600">نگاهی به زیبایی‌های فرهنگ و طبیعت قشقایی</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-hover bg-gradient-to-br from-pink-200 via-rose-200 to-red-300 rounded-2xl p-12 aspect-square flex items-center justify-center section-fade shadow-xl border border-pink-300">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🏔️</div>
+                        <p class="font-bold text-gray-800 text-lg">طبیعت زاگرس</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-gradient-to-br from-cyan-200 via-blue-200 to-indigo-300 rounded-2xl p-12 aspect-square flex items-center justify-center section-fade shadow-xl border border-cyan-300">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🐑</div>
+                        <p class="font-bold text-gray-800 text-lg">زندگی عشایری</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-gradient-to-br from-emerald-200 via-teal-200 to-green-300 rounded-2xl p-12 aspect-square flex items-center justify-center section-fade shadow-xl border border-emerald-300">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🎨</div>
+                        <p class="font-bold text-gray-800 text-lg">صنایع دستی</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-gradient-to-br from-yellow-200 via-orange-200 to-amber-300 rounded-2xl p-12 aspect-square flex items-center justify-center section-fade shadow-xl border border-yellow-300">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">👘</div>
+                        <p class="font-bold text-gray-800 text-lg">لباس‌های سنتی</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-gradient-to-br from-purple-200 via-violet-200 to-fuchsia-300 rounded-2xl p-12 aspect-square flex items-center justify-center section-fade shadow-xl border border-purple-300">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🎵</div>
+                        <p class="font-bold text-gray-800 text-lg">موسیقی محلی</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-gradient-to-br from-indigo-200 via-blue-200 to-purple-300 rounded-2xl p-12 aspect-square flex items-center justify-center section-fade shadow-xl border border-indigo-300">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🏕️</div>
+                        <p class="font-bold text-gray-800 text-lg">خیمه‌های سنتی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticket Section -->
+    <section class="py-20 bg-gradient-to-br from-violet-100 via-fuchsia-100 to-pink-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="section-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">ثبت‌نام و خرید بلیت</h2>
+                <div class="w-24 h-1 gold-gradient mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 mb-12">
+                    جای خود را در این رویداد فرهنگی بی‌نظیر رزرو کنید
+                </p>
+                
+                <div class="bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50 rounded-3xl p-12 mb-8 border border-purple-200 shadow-2xl">
+                    <div class="max-w-md mx-auto text-center">
+                        <div class="bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 rounded-2xl p-8 shadow-xl">
+                            <div class="text-sm font-bold text-white mb-2 bg-white/20 rounded-full px-4 py-1 inline-block">✨ پیشنهاد ویژه ✨</div>
+                            <h3 class="text-2xl font-bold mb-4 text-white">بلیت کامل فستیوال</h3>
+                            <div class="text-5xl font-bold text-white mb-6">€260</div>
+                            <ul class="text-white space-y-3 text-left">
+                                <li class="flex items-center">
+                                    <span class="text-yellow-300 ml-3">🎵</span>
+                                    دسترسی کامل سه روزه به تمام برنامه‌ها
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-yellow-300 ml-3">🎁</span>
+                                    هدیه ویژه فرهنگی قشقایی
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-yellow-300 ml-3">🍽️</span>
+                                    تخفیف ۲۰٪ غذا و خریدهای فستیوال
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-yellow-300 ml-3">🎨</span>
+                                    شرکت رایگان در کارگاه‌های آموزشی
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-yellow-300 ml-3">📸</span>
+                                    عکس یادگاری با هنرمندان
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-4 sm:space-y-0 sm:space-x-reverse sm:space-x-4 sm:flex sm:justify-center">
+                    <button onclick="showTicketForm()" class="bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto shadow-lg">
+                        خرید بلیت آنلاین
+                    </button>
+                    <button onclick="scrollToSection('contact')" class="border-2 border-purple-300 text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gradient-to-r hover:from-purple-100 hover:to-pink-100 transition-all duration-300 w-full sm:w-auto">
+                        اطلاعات بیشتر
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-emerald-100 via-cyan-100 to-blue-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">تماس با ما</h2>
+                <div class="w-24 h-1 gold-gradient mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600">برای اطلاعات بیشتر و پاسخ به سوالات شما</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="section-fade">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900">اطلاعات تماس</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="gold-gradient rounded-full p-3 ml-4">
+                                <span class="text-black text-xl">📧</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">ایمیل</h4>
+                                <p class="text-gray-600">info@qashqaifestival.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="gold-gradient rounded-full p-3 ml-4">
+                                <span class="text-black text-xl">📱</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">تلفن</h4>
+                                <p class="text-gray-600">00905527051189</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="gold-gradient rounded-full p-3 ml-4">
+                                <span class="text-black text-xl">📍</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">آدرس دفتر</h4>
+                                <p class="text-gray-600">استانبول، ترکیه</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-900 mb-4">شبکه‌های اجتماعی</h4>
+                        <div class="flex space-x-reverse space-x-4">
+                            <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors">
+                                <span class="text-xl">📘</span>
+                            </a>
+                            <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition-colors">
+                                <span class="text-xl">📷</span>
+                            </a>
+                            <a href="#" class="bg-red-600 text-white p-3 rounded-full hover:bg-red-700 transition-colors">
+                                <span class="text-xl">📺</span>
+                            </a>
+                            <a href="#" class="bg-green-600 text-white p-3 rounded-full hover:bg-green-700 transition-colors">
+                                <span class="text-xl">💬</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-fade">
+                    <form class="bg-white rounded-2xl shadow-xl p-8" onsubmit="submitContactForm(event)">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900">پیام شما</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">نام و نام خانوادگی</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">ایمیل</label>
+                                <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">موضوع</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                                    <option>سوال عمومی</option>
+                                    <option>خرید بلیت</option>
+                                    <option>درخواست حمایت</option>
+                                    <option>همکاری</option>
+                                    <option>رسانه</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">پیام</label>
+                                <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full gold-gradient text-black py-3 rounded-lg font-bold hover:shadow-lg transition-all duration-300">
+                                ارسال پیام
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Support Button -->
+    <div class="fixed bottom-6 left-6 z-50">
+        <a href="https://wa.me/+989921034152?text=سلام، در مورد فستیوال قشقایی سوال دارم" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+            <div class="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                پشتیبانی آنلاین واتساپ
+                <div class="absolute left-0 top-1/2 transform -translate-y-1/2 translate-x-full border-4 border-transparent border-r-gray-900"></div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-reverse space-x-3 mb-4">
+                        <span class="text-3xl">🎭</span>
+                        <span class="text-xl font-bold">فستیوال قشقایی</span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        معرفی فرهنگ اصیل قشقایی به جهان در قلب شهر زیبای استانبول
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">لینک‌های مفید</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#about" class="hover:text-yellow-400 transition-colors">درباره فستیوال</a></li>
+                        <li><a href="#programs" class="hover:text-yellow-400 transition-colors">برنامه‌ها</a></li>
+                        <li><a href="#location" class="hover:text-yellow-400 transition-colors">مکان و تاریخ</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-400 transition-colors">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">خبرنامه</h4>
+                    <p class="text-gray-300 mb-4">از آخرین اخبار فستیوال مطلع شوید</p>
+                    <form class="flex" onsubmit="subscribeNewsletter(event)">
+                        <input type="email" placeholder="ایمیل شما" class="flex-1 px-4 py-2 rounded-r-lg text-gray-900">
+                        <button type="submit" class="gold-gradient text-black px-6 py-2 rounded-l-lg font-medium hover:shadow-lg transition-all">
+                            عضویت
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 فستیوال فرهنگی قشقایی استانبول. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-8">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">خرید بلیت</h3>
+                <p class="text-gray-600">این بخش نمونه است - سیستم پرداخت واقعی در آینده راه‌اندازی خواهد شد</p>
+            </div>
+            <form onsubmit="processTicketPurchase(event)">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">نوع بلیت</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg">
+                            <option value="three-day">بلیت سه روزه - €260</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">تعداد</label>
+                        <input type="number" min="1" max="10" value="1" class="w-full px-4 py-3 border border-gray-300 rounded-lg">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">نام و نام خانوادگی</label>
+                        <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">تلفن</label>
+                        <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg">
+                    </div>
+                </div>
+                <div class="flex space-x-reverse space-x-4 mt-6">
+                    <button type="submit" class="flex-1 gold-gradient text-black py-3 rounded-lg font-bold">
+                        ادامه خرید (نمونه)
+                    </button>
+                    <button type="button" onclick="hideTicketForm()" class="flex-1 border border-gray-300 text-gray-700 py-3 rounded-lg font-bold">
+                        انصراف
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const targetDate = new Date('2026-06-01T00:00:00').getTime();
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+            
+            const days = Math.floor(difference / (2000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Scroll animations
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.section-fade');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', handleScrollAnimations);
+        handleScrollAnimations();
+        
+        // Ticket modal functions
+        function showTicketForm() {
+            document.getElementById('ticketModal').classList.remove('hidden');
+            document.getElementById('ticketModal').classList.add('flex');
+        }
+        
+        function hideTicketForm() {
+            document.getElementById('ticketModal').classList.add('hidden');
+            document.getElementById('ticketModal').classList.remove('flex');
+        }
+        
+        function processTicketPurchase(event) {
+            event.preventDefault();
+            alert('این فرم نمونه است. سیستم پرداخت واقعی به زودی راه‌اندازی خواهد شد.');
+            hideTicketForm();
+        }
+        
+        // Contact form
+        function submitContactForm(event) {
+            event.preventDefault();
+            alert('پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.');
+            event.target.reset();
+        }
+        
+        // Newsletter subscription
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            alert('با تشکر! شما با موفقیت در خبرنامه عضو شدید.');
+            event.target.reset();
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('ticketModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                hideTicketForm();
+            }
+        });
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9863fffd4107b138',t:'MTc1OTA3MDQ2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
